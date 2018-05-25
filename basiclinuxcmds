@@ -1,1 +1,43 @@
-
+cd 
+tty
+who am i
+uptime
+logname
+passwd
+useradd
+id
+ls
+mv
+cp
+df
+du
+uname
+mkdir
+systemctl
+lastb
+hostnamectl set-hostname hostx.example.com
+timedatectl
+which cat
+cat
+wc /etc/profile
+vim
+man
+info passwd
+touch
+cat
+cp mv
+rm
+permissionschmo
+chmod
+chown 
+chgrp
+chown
+usermod
+chown
+>>
+|
+;
+grep
+ps
+top
+yum
