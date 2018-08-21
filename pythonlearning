@@ -1,0 +1,181 @@
+# Arithmetic Operators
+'''
+num1 = 10
+num2 = 20
+print("num1 + num2 =", num1+num2)
+print("num1 - num2 =", num1-num2)
+print("num1 * num2 =", num1*num2)
+print("num1 / num2 =", num1/num2)
+print('5^3 = ', 5**3)
+print("20 % 3 =", 20*3)
+print("20//7=", 22//7)
+
+# Assignment Operators
+
+num3 = num1 + num2
+print(num3)
+num3+=num2
+print(num3)
+
+# Comparision Operators
+
+print("Is num 3 > num 2?", num3 > num2)
+print("Is num 2 = num 3?", num2 == num2)
+print("Is num 1 != num 2?", num1 != num2)
+
+# Logical Operators
+
+x=True
+y=False
+
+print("X and Y", x and y)
+print("X or Y", x or y)
+print("X not Y", not x)
+
+
+# Bitwise Operator
+
+num4 = 6 #110
+num5 = 2 #010
+
+print('Bitwise and =', num4 & num5)
+print('Bitwise or =', num4 | num5)
+print('Bitwise xor =', num4 ^ num5)
+
+# Datatype
+
+string1 = 'Python'
+string2 = 'Tutorial'
+
+print(string1+string2) #concatenation
+print(string2*3)    #repitition
+print(string2[2:6]) #slicing
+print(string2[:3])  #indexing
+print(string2[2:-3])
+
+
+# Strings
+# find, replace, split, count, upper, max, min, isalpha
+print(string1.count('y',0,5))
+print(string1.find('on'))
+print(min(string1))
+print(string1.isalpha())
+
+
+my_tup = ('Neel','Raj','Sandeep','Divya')
+print(my_tup+('Ron','Sanjay'))
+
+print(my_tup *3 )
+print(my_tup[-1])
+print(my_tup[3:5])
+
+my_list = ['green','red','yellow','pink']
+my_list.append('grey')
+print(my_list)
+my_list.extend(['white','black'])
+print(my_list)
+
+my_dict = {1:'green',2:'blue',3:'red'}
+print(my_dict[3])
+
+print(my_dict.values())
+my_dict.update({4:'grey'})
+print(my_dict)
+
+my_set = {1,2,5,7,5,10,8,2,1}
+my_set1 = {2,5,9,11,15,20}
+print(my_set)
+print('Union =', my_set|my_set1)
+print('Difference =', my_set1 - my_set)
+print('Intersection =', my_set & my_set1)
+
+
+# if, if...elif..else, if..else, for, while, break, continue
+
+#if, elif & else
+marks=32
+if(marks>80):
+    print('Grade A')
+elif (marks >60) and (marks <=80):
+    print("Grade B")
+elif (marks >40) and (marks <=60):
+    print("Grade C")
+else:
+    print("Grade D")
+
+#looping statements
+#while
+
+num=int(input('Enter the value of n='))
+if (num<=0):
+    print("Enter a valid value")
+else:
+    sum=0
+    while(num>0):
+        sum+=num
+        num-=1
+print(sum)
+
+
+#for loop
+
+for quant in range(99,0,-1):
+    if quant >1 :
+        print(quant," Bottles of beer on the wall,", quant,'bottles of beer')
+        if quant > 2:
+            suffix=str(quant)+"bottles of beer on the wall"
+        else:
+            suffix = '1 bottle of beer on the wall'
+    elif quant ==1 :
+        print('1 bottle of beer on the wall, 1 bottle of beer')
+        suffix=' No more beer on the wall'
+
+    print('Take one down and pass it around', suffix)
+    print("---")
+
+
+#break
+count=0
+while True:
+    print(count)
+    count+=1
+    if (count >10):
+        break
+
+
+#continue
+
+for x in range(20):
+    if (x%2)--0:
+        continue
+    print(x)
+
+
+#functions
+
+def fibo(n):
+    a=0
+    b=1
+    for x in range(n):
+        a=b
+        b=a+b
+        print(a,'\n')
+    return b
+num=int(input("Enter the value of n:"))
+print(fibo(num))
+
+
+#file handling
+
+fp= open("C:\\temp\\python.txt",'w+')
+fp.write("Python is Fun")
+fp.write('This was a great day')
+fp.seek(0)
+print(fp.read())
+fp.close()
+'''
+
+
+
+
+
